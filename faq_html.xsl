@@ -36,6 +36,11 @@
         <title>Erlang -- <xsl:value-of select="header/title"/></title>
       </head>
       <body bgcolor="white" text="#000000" link="#0000ff" vlink="#ff00ff" alink="#ff0000">
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-3045895-2']);
+          _gaq.push(['_trackPageview']);
+        </script>
 
         <div id="container">
           <script id="js" type="text/javascript" language="JavaScript" src="{$topdocdir}/js/flipmenu/flipmenu.js"/>
@@ -104,6 +109,18 @@
 
           </div>
         </div>
+        <script type="text/javascript">
+          (function() {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ?
+          'https://ssl' :
+          'http://www') + '.google-analytics.com/ga.js';
+          (document.getElementsByTagName('head')[0] ||
+          document.getElementsByTagName('body')[0]).appendChild(ga);
+          })();
+        </script>
       </body>
     </html>
   </xsl:template>
